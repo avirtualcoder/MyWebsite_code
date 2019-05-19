@@ -1,0 +1,83 @@
+@CHARSET "UTF-8";
+*{				/**为通配符，为所有元素配置样式，去除内外边距*/
+	margin: 0;
+	padding: 0;
+}
+#head_nav{			/*块元素*/
+	margin-top:40px;/*与上一块元素的顶部距离*/
+	width: 100%;    /*自身的块宽与高,若块中也有定义字体，则根据块中的*/
+	height: 40px;	
+	background-color:#c27950;/*#c3292a*/
+    text-align:center;/*块中文本居中*/
+}
+.head_a{		/*块中的链接元素*/
+	font:22px 宋体;
+	line-height: 40px;	/*设置行间距离即行高，与块高同则字体高度居中*/
+	text-decoration:none;/*去除链接元素的下划线*/
+	color:white;
+	margin-left:2%;/*链接元素之间的左外距离*/
+}
+.head_a:hover{	/*鼠标进入动作发生的样式*/
+	color:black;	/*字体样式*/
+	background-color:gray;/*背景样式*/
+	transition: .5s;
+	font: 25px 宋体;
+}
+
+
+#bottom{
+	width: 80%;
+	height: 100px;
+	margin:0 auto;
+	margin-top: 700px;
+}
+
+
+#left_nav{		/*左边列表导航*/
+	margin-left: 40px;
+	margin-top:80px;
+	width: 140px;
+	height: 370px;
+	background-color:none;
+	float: left;
+}
+#left_ul{
+	background-color:none;
+}
+#left_ul li{	/*列表格*/
+	width: 120px;		/*列表表格li大小*/
+	height: 50px;
+	background-color:skyblue;
+	text-align:center;
+	list-style: none;	/*去字前默认点*/
+	margin-left:10px;	/*相对与ul的位置*/
+	margin-top:20px;
+	line-height:50px;	/*文字行高*/
+	cursor: pointer;	/*改变鼠标样式*/
+	border-radius:5px;	/*将列表格角边样式成圆的*/
+}
+#left_ul a{		/*链接样式*/
+	font: 20px 宋体;
+	text-decoration: none;	/*去下划线*/
+	color: black;
+}
+#left_nav li:hover{		/*鼠标事件样式*/
+	background-color: gray;
+	color:green;
+	transition: .2s;	/*延迟反应0.2s*/
+}
+body{
+	background: url('../image/3.jpg');/*图片路径*/
+	background-repeat: no-repeat;/*图片不重复*/
+	background-size: cover;/*使图片大小可以覆盖整个网页*/
+}
+
+#content{
+	margin-top: 60px;
+	margin-right:100px; 
+	padding-top: 30px;
+	background-color:none;
+	height: 400px;
+	width: 850px;
+	float:right;
+}

@@ -1,0 +1,25 @@
+@CHARSET "UTF-8";
+*{				/**为通配符，为所有元素配置样式，去除内外边距*/
+	margin: 0;
+	padding: 0;
+}
+#head_nav{			/*块元素*/
+	margin-top:40px;/*与上一块元素的顶部距离*/
+	width: 100%;    /*自身的块宽与高,若块中也有定义字体，则根据块中的*/
+	height: 40px;	
+	background-color:#c27950;/*#c3292a*/
+    text-align:center;/*块中文本居中*/
+}
+.head_a{		/*块中的链接元素*/
+	font:22px 宋体;
+	line-height: 40px;	/*设置行间距离即行高，与块高同则字体高度居中*/
+	text-decoration:none;/*去除链接元素的下划线*/
+	color:white;
+	margin-left:2%;/*链接元素之间的左外距离*/
+}
+.head_a:hover{	/*鼠标进入动作发生的样式*/
+	color:black;	/*字体样式*/
+	background-color:gray;/*背景样式*/
+	transition: .5s;
+	font: 25px 宋体;
+}

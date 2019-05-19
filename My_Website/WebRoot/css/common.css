@@ -1,0 +1,50 @@
+@CHARSET "UTF-8";
+
+#left_nav{		/*左边列表导航*/
+	margin-left: 40px;
+	margin-top:80px;
+	width: 140px;
+	height: 370px;
+	background-color:none;
+	float: left;
+}
+#left_ul{
+	background-color:none;
+}
+#left_ul li{	/*列表格*/
+	width: 120px;		/*列表表格li大小*/
+	height: 50px;
+	background-color:skyblue;
+	text-align:center;
+	list-style: none;	/*去字前默认点*/
+	margin-left:10px;	/*相对与ul的位置*/
+	margin-top:20px;
+	line-height:50px;	/*文字行高*/
+	cursor: pointer;	/*改变鼠标样式*/
+	border-radius:5px;	/*将列表格角边样式成圆的*/
+}
+#left_ul a{		/*链接样式*/
+	font: 20px 宋体;
+	text-decoration: none;	/*去下划线*/
+	color: black;
+}
+#left_nav li:hover{		/*鼠标事件样式*/
+	background-color: gray;
+	color:green;
+	transition: .2s;	/*延迟反应0.2s*/
+}
+body{
+	background: url('../image/3.jpg');/*图片路径*/
+	background-repeat: no-repeat;/*图片不重复*/
+	background-size: cover;/*使图片大小可以覆盖整个网页*/
+}
+#content{
+	margin-top: 80px;
+	margin-right:100px; 
+	padding-top: 30px;
+	background-color:none;
+	height: 400px;
+	width: 850px;
+	float:right;
+
+}

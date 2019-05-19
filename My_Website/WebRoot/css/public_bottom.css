@@ -1,0 +1,11 @@
+@CHARSET "UTF-8";
+*{				/**为通配符，为所有元素配置样式，去除内外边距*/
+	margin: 0;
+	padding: 0;
+}
+#bottom{
+	width: 80%;
+	height: 100px;
+	margin:0 auto;
+	margin-top: 600px;
+}
